@@ -37,7 +37,15 @@ body{
     color:$title-default;
   }
 }
+.hero-img{
+  width: 100%;
+  max-width: 635.711px;
+}
+.inner{
+  display: flex;
+}
 .item{
+  width: 100%;
   max-width: 554px;
   display: flex;
   padding: 8px;
@@ -50,7 +58,7 @@ body{
 .price-title{
   margin-top: 64px;
   max-width: 520px;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.1285rem + 1.5552vw, 1.5rem);
   font-weight: 700;
   margin-bottom: 16px;
   color:$title-default;
@@ -62,7 +70,7 @@ body{
   border-top: 1px solid gray;
   padding-top: 16px;
   >span{
-    font-size: 24px;
+    font-size: clamp(0.875rem, 0.1285rem + 1.5552vw, 1.5rem);
     font-weight: 700;
   }
   >p{
@@ -97,5 +105,8 @@ body{
   .wrapper{
     padding-top: 260px;
     display: block;
+  }
+  .hero-img{
+    height: auto;
   }
 }

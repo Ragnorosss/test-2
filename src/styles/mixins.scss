@@ -3,7 +3,7 @@
 @mixin title{
     position:relative;
     font-weight: 800;
-    font-size: 40px;
+    font-size: clamp(1rem, -0.7916rem + 3.7325vw, 2.5rem);
     color: $text-default;
     &::before{
       content: "|";

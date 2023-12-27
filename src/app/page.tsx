@@ -11,8 +11,7 @@ export default function Home() {
           <Image
             src={heroImg}
             alt='iMac'
-            width ='635.711'
-            height='525'
+            className="hero-img"
           />
           <div className='info'>
             <h1 className='title'>Amazon</h1>
@@ -22,8 +21,10 @@ export default function Home() {
               <Button text="Заказать"/>
             </div>
             <h3 className="price-title">Расчитай  стоимость доставки товаров из Польши</h3>
-            <Input type='text' placeholder="Цена товара, zł"/>
-            <Button text="Расчитать"/>
+            <div className='inner                                                                                                                                                 '>
+              <Input type='text' placeholder="Цена товара, zł"/>
+              <Button text="Расчитать"/>
+            </div>
             <div className="price">
               <p>Сумма, zł <span>1234,56</span></p>
               <p>Сумма, ₴  <span>1234,56</span></p>

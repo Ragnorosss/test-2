@@ -1,5 +1,5 @@
 import { FC } from "react";
-import './button.scss';
+import './button.scss';                                                                                                                 
 type TButton = {
     text: string;
     onClick?: () => void
