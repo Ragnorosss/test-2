@@ -8,6 +8,6 @@ type TInput = {
 
 export const Input:FC<TInput> = ({type, placeholder,disabled}) => {
   return (
-    <input type={type} placeholder={placeholder} className='input' disabled={disabled}/>
+    <input className='input' type={type} placeholder={placeholder}  disabled={disabled}/>
   )
 }
