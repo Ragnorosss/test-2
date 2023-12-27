@@ -1,0 +1,36 @@
+@import '@/styles/_colors.scss';
+
+@mixin title{
+    position:relative;
+    font-weight: 800;
+    font-size: 40px;
+    color: $text-default;
+    &::before{
+      content: "|";
+      position:absolute;
+      width: 4px;
+      height: 4px;
+      left: -24px;
+      color:$primarycolor;
+    }
+  }
+@mixin input-text {
+    width: 100%;
+    max-width: 393px;
+    height: 48px;
+    padding: 6px 10px 6px 24px;
+    border:none;
+    border-radius: 8px;
+}
+
+
+@mixin button {
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: none;
+  color: $text-options-white;
+  background-color: $primarycolor;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}

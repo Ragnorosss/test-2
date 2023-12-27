@@ -1,0 +1,96 @@
+@import '@/styles/mixins.scss'; 
+@import '@/styles/colors';
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background;
+  height: 100Vh;
+}
+.container{
+  width: 100%;
+  max-width: 1411px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.wrapper { 
+  display: flex;
+  justify-content: center;
+  gap:64px;
+}
+.title{
+  margin-bottom: 24px;
+  @include title()
+}
+.info{
+  max-width: 590px;
+   h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color:$title-default;
+  }
+}
+.item{
+  max-width: 554px;
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: white;
+}
+.price-title{
+  margin-top: 64px;
+  max-width: 520px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.price{
+  display: flex;
+  gap:16px;
+  margin-top: 16px;
+  border-top: 1px solid gray;
+  padding-top: 16px;
+  >span{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  >p{
+    font-weight: 700;
+  }
+}
+.facture{
+  display: flex;
+  align-items: baseline;
+  gap:8px;
+  margin-top: 16px;
+}
+.descriptions{
+  >p{
+    margin-top: 64px;
+    margin-bottom: 32px;
+
+  }
+  >span{
+
+    font-weight: 700;
+  }
+  .commission,
+  .delivery{
+    margin-right: 32px;
+    font-size: 14px;
+  }
+  .time,
+  .percentage{
+    font-size: 16px;
+    padding: 8px;
+  }
+}
